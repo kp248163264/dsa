@@ -50,6 +50,10 @@ class GenerateSubsets:
             ex:
                 before printing, for n = 2, prints out [False, False], [True,False], [False, True], [True,True]
                 We process this to print out only the numbers in the process_solution method.
+
+
+
+        Runtime is O(n*2^n).
         """
         NMAX = 100
         a = [0] * (NMAX)

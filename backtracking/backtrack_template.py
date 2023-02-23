@@ -82,6 +82,10 @@ def unmake_move(a, k, input):
 def backtrack(a, k, input, construct_candidates=construct_candidates_default, process_solution=process_solution_default, is_a_solution=is_a_solution_default):
     """
     Backtrack template works for any problem, just need to specify the 3 parameter functions based on the problem.
+
+    Runtime of recursive functions is often O(branches^depth), so runtime of backtracking algorithms is often
+    exponential.
+
     """
     finished = False  # allows for premature termination
     MAXCANDIDATES = 100
